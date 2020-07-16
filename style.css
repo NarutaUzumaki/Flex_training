@@ -11,8 +11,9 @@ a{
     margin: auto;
     /*width: 90%;*/
     /*border: solid 1px red;*/
-
+    align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -27,12 +28,18 @@ a{
 .text-top a{
     margin-left: 15px;
 }
+.text-top a:hover{
+    color: #01996D;
+    transition: 0.5s;
+}
 .text-top button{
     padding: 13px 50px;
     background: #01996D;
     border: 1px solid #01996D;
     box-sizing: border-box;
     border-radius: 4px;
+
+    cursor: pointer;
 
     font-family: Lato;
     font-style: normal;
@@ -99,9 +106,343 @@ a{
     border-radius: 4px;
     color: white;
 
+    cursor: pointer;
+
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+}
+
+.white-big{
+    background-color: white;
+    /*width: 100%;*/
+    height: fit-content;
+    padding-bottom: 5%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.white-content{
+    display: flex;
+    flex-direction: column;
+    /*align-content: space-around;*/
+    justify-content: flex-start;
+
+}
+
+.left-white-content{
+    /*border: solid 1px red;*/
+    display: flex;
+    flex-direction: column;
+    /*flex-basis: 580px;*/
+    height: fit-content;
+}
+
+.left-micro-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+
+    margin-left: 11.5%;
+}
+
+.main-white-content{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0px;
+
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.right-description{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+
+    display: flex;
+    flex-basis: 670px;
+}
+
+.left-topic{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+
+    display: flex;
+    flex-basis: 580px;
+}
+
+.white-img-content{
+    /*border: solid 1px red;*/
+
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.white-img-content *{
+    /*border: solid 1px blue;*/
+    flex-basis: 390px;
+}
+
+.first-num{
+    display: flex;
+    order: 2;
+}
+
+.first-topic{
+    display: flex;
+    order: 1;
+}
+
+.first-num, .second-num, .third-num{
+    display: flex;
+    /*position: relative;*/
+    z-index: 1;
+
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.img-topic{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+
+    display: block;
+    /*position: absolute;*/
+    z-index: 2;
+
+
+    color: black;
+}
+
+.first-text, .second-text, .third-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.first-img{
+    background-image: url("img/Rectangle 30.png");
+    background-size: cover;
+    border-radius: 12px;
+    height: 50vh;
+}
+.second-img-content{
+    padding-top: 17%;
+    align-self: flex-end;
+}
+.third-img-content{
+    padding-top: 3%;
+}
+
+.second-img{
+    background-image: url("img/Rectangle 30 (1).png");
+    background-size: cover;
+    border-radius: 12px;
+    height: 50vh;
+}
+
+.third-img{
+    background-image: url("img/Rectangle 3.png");
+    background-size: cover;
+    border-radius: 12px;
+    height: 50vh;
+}
+
+.first-img, .second-img, .third-img{
+    margin-top: 10%;
+}
+
+
+.green-video-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #245852;
+    height:100vh;
+    flex-basis: 100%;
+}
+
+.left-green-description{
+    flex-basis: 580px;
+}
+
+.left-green-topic, .left-green-text, .left-green-btn{
+    display: flex;
+    color: white;
+}
+
+.left-green-topic{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+}
+
+.left-green-text{
+    padding-top: 5%;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.right-video-content{
+    display: flex;
+    border-radius: 16px;
+}
+
+.right-video-content iframe{
+    border-radius: 16px;
+}
+.left-green-btn{
+    padding-top: 10%;
+}
+
+.left-green-btn button{
+    padding: 20px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+
+    cursor: pointer;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.white-big-down{
+    background-color: white;
+    height: fit-content;
+    padding-bottom: 60px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.left-white-image-down{
+    background-image: url("img/Rectangle 15.png");
+    width: 640px;
+    height: 573px;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.right-content-topic{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.right-content-description{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+
+    color: #01996D;
+}
+
+.rigth-content-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.right-white-content-down{
+    flex-basis: 585px;
+}
+
+.white-img-content-down{
+    margin-left: 10%;
+    background-image: url("img/girl.png");
+    width: 400px;
+    height: 575px;
+    background-size: cover;
+}
+
+.green-footer{
+    background-color: #245852;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-basis: fit-content;
+
+    padding-bottom: 8%;
+}
+
+.green-footer *{
+    color: white;
+    margin-left: 12%;
+
+}
+
+.logo-down{
+    margin-top: 3%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+
+    cursor: pointer;
+}
+
+.text-footer{
+    margin-top: 3%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    cursor: pointer;
 }
