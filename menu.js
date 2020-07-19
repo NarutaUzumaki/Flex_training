@@ -6,12 +6,7 @@
     let menu_second = document.getElementById('menu_second');
 
     logo.addEventListener('click', function () {
-        if (menu_first.style.display = 'none') {
-            menu_first.style.display = 'flex';
-            menu_second.style.display = 'flex';
-        }else {
-            menu_first.style.display = 'none';
-            menu_second.style.display = 'none';
-        }
+        menu_first.classList.toggle('menu-visible');
+        menu_second.classList.toggle('menu-second-visible');
     });
 
